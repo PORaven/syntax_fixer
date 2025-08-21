@@ -1,6 +1,5 @@
 #!/bin/bash
-
-ERRORS=$(mypy "$@" 2>&1)
+ERRORS=$(mypy . 2>&1)
 RESULT=$?
 
 if [ $RESULT -ne 0 ]; then
