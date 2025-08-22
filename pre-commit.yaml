@@ -1,0 +1,40 @@
+repos:
+#  - repo: https://github.com/pycqa/isort
+#    rev: 6.0.1
+#    hooks:
+#    - id: isort
+#      name: isort (python)
+#      args: [--show-files]
+      
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.12.9
+    hooks:
+      - id: ruff-format # форматирование кода
+#      - id: ruff
+        args: [--fix]   # чтобы автофиксить ошибки
+
+  - repo: local
+    hooks:
+      - id: mypy-custom
+        name: Run mypy and stop if find errors
+        entry: pre_commit_script.bash
+        pass_filenames: false
+        language: script
+
+
+#  - repo: https://github.com/pre-commit/mirrors-isort
+#    rev: v5.13.2  # актуальная версия isort
+#    hooks:
+#      - id: isort
+#        args: ["--profile", "black"]  
+#        black, django, pycharm, google, open_stack, plone, attrs, hug, wemake, appnexus.
+#        args: [--formatter ]
+#        args: [--show-config] 
+#        args: [--show-files] 
+#        args: [--check, check--only] 
+
+#  - repo: https://github.com/pre-commit/mirrors-mypy
+#    rev: v1.17.1
+#    hooks:
+#    - id: mypy
+#      args: [--strict]
