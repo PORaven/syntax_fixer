@@ -3,7 +3,7 @@
 Сборщик для прроверки синтаксиса на основе: `isort`, `ruff`, `mypy`
 
 #Использвание: 
-1. Делаем `yaml` файл скрытым `mv pre-commit.yaml .pre-commit.yaml `
+1. Делаем `yaml` файл скрытым `mv pre-commit-config.yaml .pre-commit-config.yaml`
 2. Даем права на чтение `chmod +r pre_commit_script.bash`
 3. Установить зависимости `pip install -r requiremets.txt`
 4. Установить pre-commit 
