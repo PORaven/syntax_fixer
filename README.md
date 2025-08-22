@@ -6,7 +6,7 @@
 1. Даем права на чтение `chmod +r pre_commit_script.bash`
 2. Установить зависимости `pip install -r requiremets.txt`
 3. Установить pre-commit 
-`install pre-commit`
+`pre-commit install`
 4. Используем гит через терминал, скрипт срабатывает на уровне `commit`
 
 #Возможные ошибки:
